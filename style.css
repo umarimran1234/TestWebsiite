@@ -11,3 +11,7 @@ svg {
 h1 {
   color: #2d567c !important;
 }
+
+#email-address::placeholder {
+  color: white;
+}

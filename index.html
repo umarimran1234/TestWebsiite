@@ -158,28 +158,63 @@
               lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
               fugiat aliqua.
             </p>
-            <div class="mt-10 flex items-center justify-center gap-x-6">
+            <div class="mt-10  flex-col md:flex    items-center justify-center gap-x-6">
               <button
                 style="background-color: #2d567c"
                 data-modal-target="authentication-modal"
                 data-modal-toggle="authentication-modal"
-                class="block text-white hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                class="block  text-white hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                 type="button"
               >
                 Search your engine
               </button>
-              <div>
-                <input
-                  type="email"
-                  id="first_name"
-                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                  placeholder="Register "
-                  required
-                />
-              </div>
+
+
+              <div class="w-100 mt-12 md:mt-3" >
+                <div class="flex flex-col items-center justify-center p-6 bg-blue-900 rounded-lg w-full ">
+                  <!-- Heading Text -->
+                  <p class="text-white font-semibold text-center mb-4 text-sm sm:text-base">
+                    Search Stock of <br /> UK's Top Engine Suppliers
+                  </p>
+                
+                  <!-- Yellow Box with Input and UK Flag -->
+                  <div class="flex items-center bg-yellow-500 rounded-lg w-full  mb-4">
+                    <!-- UK Section with Blue Background -->
+                    <div class="flex items-center justify-center bg-blue-900 px-2 py-1 h-12 shadow-lg rounded-l-md mr-2">
+                      <img src="https://flagcdn.com/16x12/gb.png" class="mr-2" alt="UK Flag" />
+                      <span class="text-white font-semibold text-xs sm:text-base">UK</span>
+                    </div>
+                
+                    <!-- Input Field -->
+                    <input
+                    style="background: none; outline: none; border: none;"
+
+                      type="text"
+                      placeholder="REG HERE"
+                      class=" text-black font-bold text-center text-lg w-full "
+                    />
+                  </div>
+                
+                  <!-- Button -->
+                  <button class="bg-red-500 hover:bg-red-600 text-white font-semibold py-3 px-4 rounded-full w-full flex items-center justify-center">
+                    Get Free Quotes
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6 ml-2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                    </svg>
+                  </button>
+                </div>
+                
+                
+                
+                
+                
+                  </div>
             </div>
           </div>
         </div>
+
+      </div>
+    </div>
         <div
           class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
           aria-hidden="true"
@@ -207,9 +242,18 @@
               );
             "
           ></div>
-        </div>
-      </div>
+          
+    
+    <button class="bg-red-500 hover:bg-red-600 text-white font-semibold py-2 px-4 rounded-full w-full flex items-center justify-between">
+      Get Free Quotes
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+      </svg>
+    </button>
+  </div>
+  
 
+</div>
       <!-- Modal toggle -->
 
       <!-- Main modal -->
@@ -730,16 +774,25 @@ height="48"
           <div >
 
           <div class=" flex  max-w-md gap-x-4">
+           
             <label for="email-address" class="sr-only">Email address</label>
+            
             <input
               id="email-address"
               name="email"
+                 
               type="email"
               autocomplete="email"
+              style="border: none !important;   " 
               required
-              class="min-w-0 flex-auto rounded-md border-0 bg-white/5 px-5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6"
+              class="min-w-0 flex-auto rounded-md px-5 py-2 text-black       sm:text-sm sm:leading-6"
               placeholder="REG Here"
             />
+            <style>
+              #email-address::placeholder{
+                color: #fbfbfb !important;
+              }
+            </style>
             <button
               type="submit"
               class="flex-none rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
@@ -751,7 +804,7 @@ height="48"
           
         </div>
       </div>
-      <div
+      <div 
         class="absolute left-1/2 top-0 -z-10 -translate-x-1/2 blur-3xl xl:-top-6"
         aria-hidden="true"
       >
@@ -1197,7 +1250,7 @@ height="48"
 
 
     <h1 class="mx-12 my-10  font-bold text-gray-700 text-5xl lg:text-6xl text-center" >
-Other Parts you can find here 
+       Other Parts you can find here 
     </h1>
 
     <div class="container mx-auto w-full overflow-hidden relative">

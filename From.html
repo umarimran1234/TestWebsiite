@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <title>Forms</title>
+  </head>
+  <body>
+    <div style="">
+      <div class="max-w-7xl mx-auto p-4">
+        <!-- Header Section -->
+        <div class="text-center">
+          <h1 class="text-3xl font-bold" style="color: #2d567c">LOGO</h1>
+          <h1 class="text-2xl font-semibold text-blue-800">
+            Getting back on the road just got easier
+          </h1>
+          <div class="flex justify-center items-center space-x-2 mt-2">
+            <span class="text-gray-600"
+              >AUDI A7 S LINE BLACK ED TDI QUAT SA 2015</span
+            >
+            <div class="flex items-center space-x-2">
+              <img src="https://via.placeholder.com/80x30" alt="UK Flag" />
+              <span class="text-yellow-500 font-semibold text-lg">EA65AMX</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form Section -->
+        <div
+          class="bg-white shadow-md p-8 rounded-lg mt-8 grid grid-cols-1 sm:grid-cols-2 gap-8"
+        >
+          <!-- Left Column -->
+          <div>
+            <!-- Service Selection -->
+            <div class="mb-6">
+              <h2 class="text-lg font-semibold text-gray-800 mb-2">
+                1. Please select a service.
+              </h2>
+              <div class="flex flex-wrap space-x-4">
+                <label class="flex items-center">
+                  <input
+                    type="checkbox"
+                    class="form-checkbox text-blue-600 mr-2"
+                  />
+                  <span>Part Supplied & Fitted</span>
+                </label>
+                <label class="flex items-center">
+                  <input
+                    type="checkbox"
+                    class="form-checkbox text-blue-600 mr-2"
+                  />
+                  <span>Supply Only</span>
+                </label>
+                <label class="flex items-center">
+                  <input
+                    type="checkbox"
+                    class="form-checkbox text-blue-600 mr-2"
+                  />
+                  <span>Will Consider Both</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Condition Selection -->
+            <div class="mb-6">
+              <h2 class="text-lg font-semibold text-gray-800 mb-2">
+                2. Select a condition (you can select multiple).
+              </h2>
+              <div class="flex flex-wrap space-x-4">
+                <label class="flex items-center">
+                  <input
+                    type="checkbox"
+                    class="form-checkbox text-blue-600 mr-2"
+                  />
+                  <span>Reconditioned</span>
+                </label>
+                <label class="flex items-center">
+                  <input
+                    type="checkbox"
+                    class="form-checkbox text-blue-600 mr-2"
+                  />
+                  <span>Used (low mileage)</span>
+                </label>
+                <label class="flex items-center">
+                  <input
+                    type="checkbox"
+                    class="form-checkbox text-blue-600 mr-2"
+                  />
+                  <span>New</span>
+                </label>
+                <label class="flex items-center">
+                  <input
+                    type="checkbox"
+                    class="form-checkbox text-blue-600 mr-2"
+                  />
+                  <span>Will Consider All</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Postcode -->
+            <div class="mb-6">
+              <h2 class="text-lg font-semibold text-gray-800 mb-2">
+                Your Postcode *
+              </h2>
+              <input
+                type="text"
+                placeholder="e.g. OX11 2TX"
+                class="w-full border-2 border-gray-300 rounded-md p-3 outline-none focus:ring-2 focus:ring-blue-600"
+              />
+              <small class="text-gray-500"
+                >We use this to find garages near you</small
+              >
+            </div>
+
+            <!-- Additional Information -->
+            <div class="mb-6">
+              <h2 class="text-lg font-semibold text-gray-800 mb-2">
+                Additional Information
+              </h2>
+              <div class="space-y-4">
+                <div class="flex space-x-6">
+                  <div>
+                    <p class="font-semibold text-gray-800">
+                      Does the Vehicle Drive?
+                    </p>
+                    <label class="flex items-center mr-4">
+                      <input
+                        type="radio"
+                        name="drive"
+                        class="form-radio text-blue-600 mr-2"
+                      />
+                      <span>Yes</span>
+                    </label>
+                    <label class="flex items-center">
+                      <input
+                        type="radio"
+                        name="drive"
+                        class="form-radio text-blue-600 mr-2"
+                      />
+                      <span>No</span>
+                    </label>
+                  </div>
+
+                  <div>
+                    <p class="font-semibold text-gray-800">
+                      Vehicle Collection Required?
+                    </p>
+                    <label class="flex items-center mr-4">
+                      <input
+                        type="radio"
+                        name="collection"
+                        class="form-radio text-blue-600 mr-2"
+                      />
+                      <span>Yes</span>
+                    </label>
+                    <label class="flex items-center">
+                      <input
+                        type="radio"
+                        name="collection"
+                        class="form-radio text-blue-600 mr-2"
+                      />
+                      <span>No</span>
+                    </label>
+                  </div>
+                </div>
+
+                <textarea
+                  placeholder="Extra notes"
+                  class="w-full border-2 border-gray-300 rounded-md p-3 outline-none focus:ring-2 focus:ring-blue-600"
+                ></textarea>
+                <small class="text-gray-500"
+                  >Any extra information to support your quote?</small
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column -->
+          <div>
+            <legend>
+              <h2 class="text-lg font-semibold text-gray-800 text-center mb-4">
+                Your Details
+              </h2>
+            <p class="text-gray-600 text-sm text-center mb-6">
+              Are you getting the best possible price? Stop the guesswork!
+              Compare the engine market — instantly compare prices from your
+              local & national suppliers and maximize savings.
+            </p>
+
+            <div class="space-y-4 mb-6">
+              <input
+                type="email"
+                placeholder="Email address (Mandatory)"
+                class="w-full border-2 border-gray-300 rounded-md p-3 outline-none focus:ring-2 focus:ring-blue-600"
+              />
+              <input
+                type="text"
+                placeholder="Name"
+                class="w-full border-2 border-gray-300 rounded-md p-3 outline-none focus:ring-2 focus:ring-blue-600"
+              />
+              <input
+                type="text"
+                placeholder="Enter Whatsapp Number"
+                class="w-full border-2 border-gray-300 rounded-md p-3 outline-none focus:ring-2 focus:ring-blue-600"
+              />
+            </div>
+
+            <button
+              class="bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-6 rounded-md w-full flex items-center justify-center"
+            >
+              Get Quotes
+            </button>
+            <small class="text-gray-500 text-center block mt-4">
+              Clicking <span class="font-semibold">Get Quotes</span> indicates
+              that you have read and agree to our
+              <a href="#" class="text-blue-600 underline">terms</a> and
+              <a href="#" class="text-blue-600 underline">privacy policy</a>.
+            </small>
+          </div>
+        </div>
+    </legend>
+
+      </div>
+    </div>
+  </body>
+</html>
